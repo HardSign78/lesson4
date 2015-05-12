@@ -1,0 +1,23 @@
+package lesson4;
+
+import java.util.Arrays;
+
+public class MinMaxSearch {
+    public static void main(String[] args) {
+        int[] a1=new int[7];
+        a1=new int[]{1,0,234,-342,4564,34,-45};
+        System.out.println(SearchMin(a1));
+        System.out.println(SearchMax(a1));
+    }
+
+    public static int SearchMin(int[] Array) {
+    Arrays.sort(Array);
+        return Array[0];
+    }
+
+    public static int SearchMax(int[] Array){
+        Arrays.sort(Array);
+        int a=Array.length-1;
+        return(Array[a]);
+    }
+}
